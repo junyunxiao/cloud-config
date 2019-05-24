@@ -2,7 +2,7 @@ server:
   port: 8768
 spring:
   application:
-    name: cloud-zipkin
+    name: cloud-authen
   output:
     ansi:
       enabled: detect
