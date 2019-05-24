@@ -1,1 +1,29 @@
-
+server:
+  port: 8766
+spring:
+  application:
+    name: cloud-zipkin
+  output:
+    ansi:
+      enabled: detect
+  rabbitmq:
+    host: 114.116.83.151
+    port: 5672
+    username: guest
+    password: guest
+  main:
+    allow-bean-definition-overriding: true #当遇到同样名字的时候，是否允许覆盖注册
+eureka:
+  instance:
+    prefer-ip-address: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+management:
+  metrics:
+    web:
+      server:
+        auto-time-requests: false
+logging:
+  level:
+    root: info
+    com.microservice.cloud.zipkin: info
