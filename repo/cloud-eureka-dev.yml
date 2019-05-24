@@ -23,3 +23,11 @@ eureka:
   server:
     enable-self-preservation: true #是否开启自我保护
     eviction-interval-timer-in-ms: 60000 #清理间隔
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
