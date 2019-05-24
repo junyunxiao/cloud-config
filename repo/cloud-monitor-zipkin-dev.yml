@@ -2,7 +2,7 @@ server:
   port: 8766
 spring:
   application:
-    name: cloud-zipkin
+    name: cloud-monitor-zipkin
   output:
     ansi:
       enabled: detect
