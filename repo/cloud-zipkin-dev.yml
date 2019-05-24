@@ -23,6 +23,12 @@ management:
     web:
       server:
         auto-time-requests: false
+  endpoint:
+    health:
+      show-details: always
+    web:
+      exposure:
+        include: *
 logging:
   level:
     root: info
